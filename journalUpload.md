@@ -199,6 +199,13 @@
 	}
 	```
 
+	`acct_code` is not setup
+	```javascript
+	__invalid: {
+		"line_items": "Account code [acct_code] is closed"
+	}
+	```
+
 	`trans_desc` has only one line item
 	```javascript
 	__invalid: {
@@ -248,10 +255,17 @@
 	}
 	```
 
-	`debit_amt` and `credit_amt` cannot be equal to or greater than 0 at the same time for one line item
+	`debit_amt` and `credit_amt` cannot be greater than 0 at the same time for one line item
 	```javascript
 	__invalid: {
 		"line_items": "Debit and Credit amounts cannot both be greater than zero on the same line"
+	}
+	```
+
+	`debit_amt` and `credit_amt` cannot be equal to 0 at the same time for one line item
+	```javascript
+	__invalid: {
+		"line_items": "Either Debit or Credit amount must be greater than zero"
 	}
 	```
 

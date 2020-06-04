@@ -471,7 +471,7 @@
 
 	```HTML
 	<form id="postForm" name="postForm" method="POST" action="http://api.tasscloud.com.au/tassweb/api/">
-		 <input type="hidden" name="sundryReceiptUpload">
+		 <input type="hidden" name="method" value="sundryReceiptUpload">
 		 <input type="hidden" name="appcode" value="API21">
 		 <input type="hidden" name="company" value="10">
 		 <input type="hidden" name="v" value="2">

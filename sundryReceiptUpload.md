@@ -68,21 +68,37 @@
 
 	```javascript
 	{
-		"sundryreceipts":
-		[
-			{
-				"id":"1",
-				"submit_time":"2020-05-26 10:00:00.000",
-				"trans_amt":"11.00",
-				"batch_num":"20200129",
-				"sundry_name":"Billy Joe",
-				"comment":"Sundry Fee",
-				"acct_code":"01-0290-00-00",
-				"dist_amt":"10.00",
-				"tax_amt":"1.00",
-				"tax_code":"AO"
-			}
-		]
+	    "success":"You successfully uploaded 1 sundry receipt(s).",
+	    "token":{
+	        "sundryreceipts":[
+	            {
+	                "receipt_num":"",
+	                "donor_num":"",
+	                "seq_num":1,
+	                "sundry_name":"Billy Joe",
+	                "appeal_code":"",
+	                "dist_amt":10,
+	                "ple_num":"",
+	                "comment":"Sundry Fee",
+	                "tax_amt":1,
+	                "town_sub":"",
+	                "state_code":"",
+	                "trans_amt":11,
+	                "addr3":"",
+	                "addr2":"",
+	                "submit_time":"2020-05-26 10:00:00.000",
+	                "addr1":"",
+	                "country":"",
+	                "batch_num":20200129,
+	                "acct_code":"01-0290-00-00",
+	                "post_code":"",
+	                "id":1,
+	                "tax_code":"AO",
+	                "merchant_id":""
+	            }
+	        ],
+	        "timestamp":"{ts '2020-06-05 09:01:54'}"
+	    }
 	}
 	```
  

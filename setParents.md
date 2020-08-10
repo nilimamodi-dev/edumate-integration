@@ -18,7 +18,7 @@
 
 	**Required:**
  
-	`parentcode [string]` - Parent Code.
+	`id [string]` - Parent Code.
 
 	`surname [string]` - Surname.
 

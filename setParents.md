@@ -101,7 +101,7 @@
 				"p1_surname": "Bloggs",
 				"p1_occupation": "Builder",
 				"p1_preferred_name": "",
-				"parentcode": 129226,
+				"id": 129226,
 				"p1_suffix": "",
 				"p1_initials": "A",
 				"p1_title": "Mr",
@@ -236,10 +236,10 @@
 	}
 	```
 
-		`parentcode` is more than 8 characters
+		`id` is more than 8 characters
 	```javascript
 	__invalid: {
-		"parentcode": "exceeds 8 characters"
+		"id": "exceeds 8 characters"
 	}
 	```
 

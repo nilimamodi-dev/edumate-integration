@@ -22,41 +22,41 @@
 
 	`surname [string]` - Surname.
 
-	`p1_surname [string]` - Parent 1 Surname. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_surname [string]` - Parent 1 Surname. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_first_name [string]` - Parent 1 First Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_first_name [string]` - Parent 1 First Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_preferred_name [string]` - Parent 1 Preferred Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_preferred_name [string]` - Parent 1 Preferred Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_gender [string]` - Parent 1 Gender. Must not be empty string when any of the 'p1_' prefixed items are supplied. Must be a valid Gender description within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_gender [string]` - Parent 1 Gender. Must not be empty string when any of the 'p1_' prefixed items are supplied. Must be a valid Gender description within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_occupation [string]` - Parent 1 Occupation.  Must be a valid Occupation description within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_occupation [string]` - Parent 1 Occupation.  Must be a valid Occupation description within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_title [string]` - Parent 1 Title. Must be a valid Salutation within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_title [string]` - Parent 1 Title. Must be a valid Salutation within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_initials [string]` - Parent 1 Initials.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_initials [string]` - Parent 1 Initials.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_other_name [string]` - Parent 1 Other Name.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_other_name [string]` - Parent 1 Other Name.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_suffix [string]` - Parent 1 Suffix.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p1_suffix [string]` - Parent 1 Suffix.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_surname [string]` - Parent 2 Surname. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_surname [string]` - Parent 2 Surname. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_first_name [string]` - Parent 2 First Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_first_name [string]` - Parent 2 First Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_preferred_name [string]` - Parent 2 Preferred Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_preferred_name [string]` - Parent 2 Preferred Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_gender [string]` - Parent 2 Gender. Must not be empty string when any of the 'p2_' prefixed items are supplied. Must be a valid Gender description within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_gender [string]` - Parent 2 Gender. Must not be empty string when any of the 'p2_' prefixed items are supplied. Must be a valid Gender description within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_occupation [string]` - Parent 2 Occupation. Must be a valid Occupation description within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_occupation [string]` - Parent 2 Occupation. Must be a valid Occupation description within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_title [string]` - Parent 2 Title. Must be a valid Salutation within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_title [string]` - Parent 2 Title. Must be a valid Salutation within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_initials [string]` - Parent 2 Initials.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_initials [string]` - Parent 2 Initials.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_other_name [string]` - Parent 2 Other Name.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_other_name [string]` - Parent 2 Other Name.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_suffix [string]` - Parent 2 Suffix.  If empty string is provided, the data person will be removed from the parent in TASS.
+	`p2_suffix [string]` - Parent 2 Suffix.  If empty string is provided, the person will be removed from the parent in TASS.
 	
 	
 

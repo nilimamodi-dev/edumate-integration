@@ -22,46 +22,43 @@
 
 	`surname [string]` - Surname.
 
-	**Optional:**
+	`p1_surname [string]` - Parent 1 Surname. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p1_occupation [string]` - Parent 1 Occupation.  Must be a valid Occupation description within TASS.web.
+	`p1_first_name [string]` - Parent 1 First Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p1_title [string]` - Parent 1 Title. Must be a valid Salutation within TASS.web.
+	`p1_preferred_name [string]` - Parent 1 Preferred Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p1_initials [string]` - Parent 1 Initials.
+	`p1_gender [string]` - Parent 1 Gender. Must not be empty string when any of the 'p1_' prefixed items are supplied. Must be a valid Gender description within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p1_other_name [string]` - Parent 1 Other Name.
+	`p1_occupation [string]` - Parent 1 Occupation.  Must be a valid Occupation description within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p1_suffix [string]` - Parent 1 Suffix.
+	`p1_title [string]` - Parent 1 Title. Must be a valid Salutation within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p2_occupation [string]` - Parent 2 Occupation. Must be a valid Occupation description within TASS.web.
+	`p1_initials [string]` - Parent 1 Initials.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p2_title [string]` - Parent 2 Title. Must be a valid Salutation within TASS.web.
+	`p1_other_name [string]` - Parent 1 Other Name.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p2_initials [string]` - Parent 2 Initials.
+	`p1_suffix [string]` - Parent 1 Suffix.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p2_other_name [string]` - Parent 2 Other Name.
+	`p2_surname [string]` - Parent 2 Surname. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
 
-	`p2_suffix [string]` - Parent 2 Suffix.
+	`p2_first_name [string]` - Parent 2 First Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
+
+	`p2_preferred_name [string]` - Parent 2 Preferred Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the data person will be removed from the parent in TASS.
+
+	`p2_gender [string]` - Parent 2 Gender. Must not be empty string when any of the 'p2_' prefixed items are supplied. Must be a valid Gender description within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+
+	`p2_occupation [string]` - Parent 2 Occupation. Must be a valid Occupation description within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+
+	`p2_title [string]` - Parent 2 Title. Must be a valid Salutation within TASS.web.  If empty string is provided, the data person will be removed from the parent in TASS.
+
+	`p2_initials [string]` - Parent 2 Initials.  If empty string is provided, the data person will be removed from the parent in TASS.
+
+	`p2_other_name [string]` - Parent 2 Other Name.  If empty string is provided, the data person will be removed from the parent in TASS.
+
+	`p2_suffix [string]` - Parent 2 Suffix.  If empty string is provided, the data person will be removed from the parent in TASS.
 	
-
-	**Conditional:**
-
-	`p1_surname [string]` - Parent 1 Surname. Required when any of the 'p1_' prefixed items are supplied.
-
-	`p1_first_name [string]` - Parent 1 First Name. Required when any of the 'p1_' prefixed items are supplied.
-
-	`p1_preferred_name [string]` - Parent 1 Preferred Name. Required when any of the 'p1_' prefixed items are supplied.
-
-	`p1_gender [string]` - Parent 1 Gender. Required when any of the 'p1_' prefixed items are supplied. Must be a valid Gender description within TASS.web.
-
-	`p2_surname [string]` - Parent 2 Surname. Required when any of the 'p2_' prefixed items are supplied.
-
-	`p2_first_name [string]` - Parent 2 First Name. Required when any of the 'p2_' prefixed items are supplied.
-
-	`p2_preferred_name [string]` - Parent 2 Preferred Name. Required when any of the 'p2_' prefixed items are supplied.
-
-	`p2_gender [string]` - Parent 2 Gender. Required when any of the 'p2_' prefixed items are supplied. Must be a valid Gender description within TASS.web.
+	
 
 
 
@@ -96,18 +93,27 @@
 				"p1_first_name": "Jimmy"
 			},
 				{
-				"surname": "Bloggs",
+				"surname": "Smith",
 				"p1_other_name": "",
-				"p1_surname": "Bloggs",
-				"p1_occupation": "Builder",
-				"p1_preferred_name": "",
+				"p1_surname": "Smith",
+				"p1_occupation": "Accountant",
+				"p1_preferred_name": "Aaron",
 				"id": 129226,
 				"p1_suffix": "",
 				"p1_initials": "A",
 				"p1_title": "Mr",
 				"p1_gender": "Male",
 				"p2_occupation": "",
-				"p1_first_name": "Alan"
+				"p1_first_name": "Aaron"
+				"p2_first_name": "",
+				"p2_surname": "",
+				"p2_other_name": "",
+				"p2_initials": "",
+				"p2_title": "",
+				"p2_suffix": "",
+				"p2_preferred_name": "",
+				"p2_gender": "",
+				"p2_occupation": "",
 				}
 			],
 			"timestamp": "{ts '2020-08-06 07:11:30'}"
@@ -128,6 +134,13 @@
 	```javascript
 	__invalid: {
 		"[field_name]": "'[field_name]' is not a valid field name"
+	}
+	```
+
+	`[field_name]` is not supplied
+	```javascript
+	__invalid: {
+		"[field_name]": "field is required"
 	}
 	```
 
@@ -404,6 +417,28 @@
 					, "p2_preferred_name" : "Kazz"
 					, "p2_suffix" : "BMMST"
 					, "p2_gender" : "Female"
+				}
+				, {
+					"id" : "129226"
+					, "surname" : "Smith"
+					, "p1_occupation" : "Accountant"
+					, "p1_title" : "Mr"
+					, "p1_initials" : "A"
+					, "p1_surname" : "Smith"
+					, "p1_first_name" : "Aaron"
+					, "p1_other_name" : ""
+					, "p1_preferred_name" : "Aaron"
+					, "p1_suffix" : ""
+					, "p1_gender" : "Male"
+					, "p2_occupation" : ""
+					, "p2_title" : ""
+					, "p2_initials" : ""
+					, "p2_surname" : ""
+					, "p2_first_name" : ""
+					, "p2_other_name" : ""
+					, "p2_preferred_name" : ""
+					, "p2_suffix" : ""
+					, "p2_gender" : ""
 				}
 			]
 		}

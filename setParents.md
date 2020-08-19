@@ -151,6 +151,13 @@
 	}
 	```
 
+	`id` is a duplicate parent code
+	```javascript
+	__invalid: {
+		"id": "[id] is a duplicate parent code."
+	}
+	```
+
 	`surname` not supplied
 	```javascript
 	__invalid: {

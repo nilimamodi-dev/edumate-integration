@@ -2,6 +2,8 @@
 ----
 	Returns "success" and a count of updated parent address(es), or a structure of invalid validations "__invalid" belonging to parent address(es).
 
+	Where an address is not included in the array of addresses for a parent, it will not be updated or deleted.  To delete an address, the keys must be supplied with 'empty string' values.
+
 * **Version History:**
 
     TASS v53.2.nnn - Method Added.
@@ -137,6 +139,20 @@
 	```javascript
 	__invalid: {
 		"data": "'data' is required."
+	}
+	```
+
+	`parentcode` is not supplied
+	```javascript
+	__invalid: {
+		"parentcode": "'parentcode' is required"
+	}
+	```
+
+	`parentcode` is a duplicate parent code
+	```javascript
+	__invalid: {
+		"parentcode": "[parentcode] is a duplicate parent code."
 	}
 	```
 

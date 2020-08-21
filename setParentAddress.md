@@ -1,6 +1,6 @@
 **SetParentAddress**
 ----
-	Returns "success" and a count of updated parent address(es), or a structure of invalid validations "__invalid" belonging to parent address(es).
+	Returns "success" and a count of updated and/or failed parent address(es), or a structure of invalid validations "__invalid" belonging to parent address(es).
 
 	Where an address is not included in the array of addresses for a parent, it will not be updated or deleted.  To delete an address, the keys must be supplied with 'empty string' values.
 
@@ -180,119 +180,119 @@
 	`addrline1` is more than 60 characters
 	```javascript
 	__invalid: {
-		"addrline1": "exceeds 60 characters"
+		"addrline1": "'[addrline1]' exceeds 60 characters"
 	}
 	```
 
 	`addrline2` is more than 60 characters
 	```javascript
 	__invalid: {
-		"addrline2": "exceeds 60 characters"
+		"addrline2": "'[addrline2]' exceeds 60 characters"
 	}
 	```
 
 	`addrline3` is more than 60 characters
 	```javascript
 	__invalid: {
-		"addrline3": "exceeds 60 characters"
+		"addrline3": "'[addrline3]' exceeds 60 characters"
 	}
 	```
 
 	`town_suburb` is more than 50 characters
 	```javascript
 	__invalid: {
-		"town_suburb": "exceeds 50 characters"
+		"town_suburb": "'[town_suburb]' exceeds 50 characters"
 	}
 	```
 
 	`state_code` is more than 3 characters
 	```javascript
 	__invalid: {
-		"state_code": "exceeds 3 characters"
+		"state_code": "'[state_code]' exceeds 3 characters"
 	}
 	```
 
 	`post_code` is more than 12 characters
 	```javascript
 	__invalid: {
-		"post_code": "exceeds 12 characters"
+		"post_code": "'[post_code]' exceeds 12 characters"
 	}
 	```
 
 	`country` is more than 40 characters
 	```javascript
 	__invalid: {
-		"country": "exceeds 40 characters"
+		"country": "'[country]' exceeds 40 characters"
 	}
 	```
 
 	`home_phone` is more than 30 characters
 	```javascript
 	__invalid: {
-		"home_phone": "exceeds 30 characters"
+		"home_phone": "'[home_phone]' exceeds 30 characters"
 	}
 	```
 
 	`business_phone` is more than 30 characters
 	```javascript
 	__invalid: {
-		"business_phone": "exceeds 30 characters"
+		"business_phone": "'[business_phone]' exceeds 30 characters"
 	}
 	```
 
 	`fax` is more than 30 characters
 	```javascript
 	__invalid: {
-		"fax": "exceeds 30 characters"
+		"fax": "'[fax]' exceeds 30 characters"
 	}
 	```
 
 	`salutation` is more than 60 characters
 	```javascript
 	__invalid: {
-		"salutation": "exceeds 60 characters"
+		"salutation": "'[salutation]' exceeds 60 characters"
 	}
 	```
 
 	`e_mail1` is more than 140 characters
 	```javascript
 	__invalid: {
-		"e_mail1": "exceeds 140 characters"
+		"e_mail1": "'[e_mail1]' exceeds 140 characters"
 	}
 	```
 
 	`mobile1` is more than 30 characters
 	```javascript
 	__invalid: {
-		"mobile1": "exceeds 30 characters"
+		"mobile1": "'[mobile1]' exceeds 30 characters"
 	}
 	```
 
 	`sms_flg1` is more than 1 characters
 	```javascript
 	__invalid: {
-		"sms_flg1": "exceeds 1 characters"
+		"sms_flg1": "'[sms_flg1]' exceeds 1 characters"
 	}
 	```
 
 	`e_mail2` is more than 140 characters
 	```javascript
 	__invalid: {
-		"e_mail2": "exceeds 140 characters"
+		"e_mail2": "'[e_mail2]' exceeds 140 characters"
 	}
 	```
 
 	`mobile2` is more than 30 characters
 	```javascript
 	__invalid: {
-		"mobile2": "exceeds 30 characters"
+		"mobile2": "'[mobile2]' exceeds 30 characters"
 	}
 	```
 
 	`sms_flg2` is more than 1 characters
 	```javascript
 	__invalid: {
-		"sms_flg2": "exceeds 1 characters"
+		"sms_flg2": "'[sms_flg2]' exceeds 1 characters"
 	}
 	```
 

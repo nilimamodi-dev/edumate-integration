@@ -22,7 +22,7 @@
  
  	`data [array]` - Main data array containing parents and their addresses.
 
-	`parentcode [string]` - Parent Code.
+	`id [string]` - Parent Code.
 
 	`addresses [array]` - Array of addresses.
 
@@ -125,7 +125,7 @@
 							"mobile1": "0411458985"
 						}
 					],
-					"parentcode": 129225
+					"id": 129225
 				}
 			],
 			"timestamp": "{ts '2020-08-19 21:00:45'}"
@@ -142,17 +142,17 @@
 	}
 	```
 
-	`parentcode` is not supplied
+	`id` is not supplied
 	```javascript
 	__invalid: {
-		"parentcode": "'parentcode' is required"
+		"id": "'id' is required"
 	}
 	```
 
-	`parentcode` is a duplicate parent code
+	`id` is a duplicate parent code
 	```javascript
 	__invalid: {
-		"parentcode": "[parentcode] is a duplicate parent code."
+		"id": "'[id]' is a duplicate 'id'."
 	}
 	```
 
@@ -163,10 +163,10 @@
 	}
 	```
 
-	`id` not supplied
+	`id` not supplied within address array
 	```javascript
 	__invalid: {
-		"id": "Id is required for all rows."
+		"id": "'id' is requred for each address"
 	}
 	```
 
@@ -304,7 +304,7 @@
 	    "data":
 	    [
 	        {
-	            "parentcode" : "129225"
+	            "id" : "129225"
 	            , "addresses" : [
 	                {
 	                    "id" : "home"

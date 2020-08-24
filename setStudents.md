@@ -70,13 +70,16 @@
 
 	`visa_subclass [string]` - Visa Subclass
 
-	`date_arrival [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Arrival
+	`date_of_arrival [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Arrival
+
+	`ffpos [string]` - FFPOS (Y or N). If supplied, length must be 1.
 
 	**Conditional:**
 
 	`mob_phone [string]` - Mobile Phone. Required if sms_flg is present.
 
 	`sms_flg [string]` - SMS Flag (Y or N) Required if mob_phone is present. If supplied, length must be 1.
+
 
 
 
@@ -223,6 +226,20 @@
 	```javascript
 	__invalid: {
 		"form_class": "Value is not a valid alphanumeric code."
+	} 
+	```
+
+	`parent_code` exceeds 8 characters
+	```javascript
+	__invalid: {
+		"parent_code": "The value for this field exceeds the length permitted (NN of 8)."
+	} 
+	```
+
+	`parent_code` is not a valid parent
+	```javascript
+	__invalid: {
+		"parent_code": "'[parent_code]' is not a valid Parent"
 	} 
 	```
 

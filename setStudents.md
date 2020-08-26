@@ -20,7 +20,7 @@
  
 	`data [array]` - Array of Students to be updated
 
-	`id [string]` - Student Code
+	`id [string]` - Student Code sourced from Edumate
 
 	`surname [string]` - Surname. Length must be between 1 and 30 Characters
 
@@ -28,11 +28,11 @@
 
 	`boarder [string]` - Boarder flag. Length must be 1 Character (Y/N)
 	
-	`parent_code [string]` - Parent Code. Length must be between 1 and 8 Characters
+	`parent_code [string]` - Parent Code sourced from Edumate
 	
 	`first_name [string]` - First Name. Length must be between 1 and 50 Characters
 	
-	`gender [string]` - Gender. Length must be between 1 and 50 Characters
+	`gender [string]` - Gender. Length must be between 1 and 3 Characters and a valid Gender in TASS
 	
 	`year_group [string]` - Year Group. Length must be between 1 and 2 Characters
 	
@@ -87,43 +87,43 @@
 
 	```javascript
 	{
-	"success": "You successfully saved 1 student(s).",
-	"__tassversion": "01.052.0.999",
-	"token": {
-		"data": [
-			{
-				"date_of_leaving": "",
-				"distance_ed": "N",
-				"resident_status": "Australian Citizen",
-				"year_group": -1,
-				"first_name": "Logan",
-				"ffpos": 1,
-				"campus": "International",
-				"preferred_name": "Jim",
-				"boarder": "N",
-				"gender": "Male",
-				"id": 88568,
-				"house": "Acacia",
-				"date_of_birth": "2005-05-02",
-				"alternate_id": "008665443X",
-				"surname": "Bloggs",
-				"pc_tutor_group": "A1",
-				"date_of_arrival": "2018-08-24",
-				"preferred_surname": "Pref Sur",
-				"e_mail": "test@tassweb.com.au",
-				"mobile_phone": "0425889552",
-				"parent_code": 129225,
-				"sms_flg": "Y",
-				"multiparent_flg": "N",
-				"visa_subclass": "Sup",
-				"religion": "Baptist",
-				"fte": 1,
-				"other_name": "Jimmy",
-				"date_of_entry": "2020-08-01",
-				"visa_expiry": "2028-01-01"
-			}
-		],
-		"timestamp": "{ts '2020-08-25 00:27:11'}"
+		"success": "You successfully saved 1 student(s).",
+		"__tassversion": "01.052.0.999",
+		"token": {
+			"data": [
+				{
+					"date_of_leaving": "",
+					"distance_ed": "N",
+					"resident_status": "Australian Citizen",
+					"year_group": -1,
+					"first_name": "Logan",
+					"ffpos": "N",
+					"campus": "International",
+					"preferred_name": "",
+					"boarder": "N",
+					"gender": "M",
+					"id": 1876543218,
+					"house": "Acacia",
+					"date_of_birth": "2005-05-02",
+					"alternate_id": "008665443z",
+					"surname": "Edumate",
+					"pc_tutor_group": "A1",
+					"date_of_arrival": "2018-08-24",
+					"preferred_surname": "",
+					"e_mail": "test@tassweb.com.au",
+					"mobile_phone": "0425889552",
+					"parent_code": "2147483641",
+					"sms_flg": "Y",
+					"multiparent_flg": "N",
+					"visa_subclass": "Sup",
+					"religion": "Baptist",
+					"fte": 1,
+					"other_name": "Jimmy",
+					"date_of_entry": "2020-08-01",
+					"visa_expiry": "2028-01-01"
+				}
+			],
+			"timestamp": "{ts '2020-08-26 16:21:48'}"
 		}
 	}
 	```
@@ -257,6 +257,20 @@
 	} 
 	```
 
+	`gender` exceed 3 characters
+	```javascript
+	__invalid: {
+		"gender": "The value for this field exceeds the length permitted (NN of 3)."
+	} 
+	```
+
+	`gender` does not exist in the database
+	```javascript
+	__invalid: {
+		"gender": "'[gender]' is not a valid Gender"
+	} 
+	```
+
 	`religion` exceed 22 characters
 	```javascript
 	__invalid: {
@@ -267,7 +281,7 @@
 	`religion` does not exist in the database
 	```javascript
 	__invalid: {
-		"religion": "religion does not exist"
+		"religion": "'[religion]' is not a valid Religion"
 	} 
 	```
 
@@ -295,7 +309,7 @@
 	`campus` does not exist in the database
 	```javascript
 	__invalid: {
-		"campus": "campus does not exist"
+		"campus": "'[campus]' is not a valid Campus"
 	} 
 	```
 
@@ -381,40 +395,40 @@
 
 	```javascript
 	{
-	"data":
-		[
-			{
-				"id" : "88568"
-				, "date_of_entry" : "2020-08-01"
-				, "boarder" : "N"
-				, "parent_code" : "129225"
-				, "surname" : "Bloggs"
-				, "first_name" : "Logan"
-				, "gender" : "Male"
-				, "year_group" : "-1"
-				, "multiparent_flg" : "N"
-				, "distance_ed" : "N"
-				, "fte" : "1.00"
-				, "pc_tutor_group" : "A1"
-				, "date_of_leaving" : ""
-				, "date_of_birth" : "2005-05-02"
-				, "date_of_arrival" : "2018-08-24"
-				, "other_name" : "Jimmy"
-				, "preferred_name" : "Jim"
-				, "preferred_surname" : "Pref Sur"
-				, "alternate_id" : "008665443X"
-				, "e_mail" : "test@tassweb.com.au"
-				, "mobile_phone" : "0425889552"
-				, "sms_flg" : "Y"
-				, "visa_expiry" : "2028-01-01"
-				, "visa_subclass" : "Sup"
-				, "ffpos" : "1"
-				, "house" : "Acacia"
-				, "religion" : "Baptist"
-				, "campus" : "International"
-				, "resident_status" : "Australian Citizen"
-			}
-		]
+	    "data":
+	    [
+	        {
+	            "id" : "1876543218"
+	            , "date_of_entry" : "2020-08-01"
+	            , "boarder" : "N"
+	            , "parent_code" : "2147483641"
+	            , "surname" : "Edumate"
+	            , "first_name" : "Logan"
+	            , "gender" : "M"
+	            , "year_group" : "-1"
+	            , "multiparent_flg" : "N"
+	            , "distance_ed" : "N"
+	            , "fte" : "1.00"
+	            , "pc_tutor_group" : "A1"
+	            , "date_of_leaving" : ""
+	            , "date_of_birth" : "2005-05-02"
+	            , "date_of_arrival" : "2018-08-24"
+	            , "other_name" : "Jimmy"
+	            , "preferred_name" : ""
+	            , "preferred_surname" : ""
+	            , "alternate_id" : "008665443z"
+	            , "e_mail" : "test@tassweb.com.au"
+	            , "mobile_phone" : "0425889552"
+	            , "sms_flg" : "Y"
+	            , "visa_expiry" : "2028-01-01"
+	            , "visa_subclass" : "Sup"
+	            , "ffpos" : "N"
+	            , "house" : "Acacia"
+	            , "religion" : "Baptist"
+	            , "campus" : "International"
+	            , "resident_status" : "Australian Citizen"
+	        }
+	    ]
 	}
 	```
 

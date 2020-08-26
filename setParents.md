@@ -18,7 +18,7 @@
 
 	**Required:**
  
-	`id [string]` - Parent Code.
+	`id [string]` - Parent Code sourced from Edumate.
 
 	`surname [string]` - Surname.
 
@@ -26,9 +26,9 @@
 
 	`p1_first_name [string]` - Parent 1 First Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p1_preferred_name [string]` - Parent 1 Preferred Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
+	`p1_preferred_name [string]` - Parent 1 Preferred Name. Must not be empty string when any of the other 'p1_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.  If empty string and `p1_first_name` is supplied, then it is defaulted to `p1_first_name`
 
-	`p1_gender [string]` - Parent 1 Gender. Must not be empty string when any of the 'p1_' prefixed items are supplied. Must be a valid Gender description within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
+	`p1_gender [string]` - Parent 1 Gender. Must not be empty string when any of the 'p1_' prefixed items are supplied. Must be a valid Gender code within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
 	`p1_occupation [string]` - Parent 1 Occupation.  Must be a valid Occupation description within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
@@ -44,9 +44,9 @@
 
 	`p2_first_name [string]` - Parent 2 First Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
 
-	`p2_preferred_name [string]` - Parent 2 Preferred Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS.
+	`p2_preferred_name [string]` - Parent 2 Preferred Name. Must not be empty string when any of the 'p2_' prefixed items are supplied.  If empty string is provided, the person will be removed from the parent in TASS. If empty string and `p2_first_name` is supplied, then it is defaulted to `p2_first_name`
 
-	`p2_gender [string]` - Parent 2 Gender. Must not be empty string when any of the 'p2_' prefixed items are supplied. Must be a valid Gender description within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
+	`p2_gender [string]` - Parent 2 Gender. Must not be empty string when any of the 'p2_' prefixed items are supplied. Must be a valid Gender code within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
 	`p2_occupation [string]` - Parent 2 Occupation. Must be a valid Occupation description within TASS.web.  If empty string is provided, the person will be removed from the parent in TASS.
 
@@ -87,8 +87,8 @@
 				"p1_initials": "J",
 				"p1_title": "Mr",
 				"p2_preferred_name": "Kazz",
-				"p2_gender": "Female",
-				"p1_gender": "Male",
+				"p2_gender": "F",
+				"p1_gender": "M",
 				"p2_occupation": "Dentist",
 				"p1_first_name": "Jimmy"
 			},
@@ -102,7 +102,7 @@
 				"p1_suffix": "",
 				"p1_initials": "A",
 				"p1_title": "Mr",
-				"p1_gender": "Male",
+				"p1_gender": "M",
 				"p2_occupation": "",
 				"p1_first_name": "Aaron"
 				"p2_first_name": "",
@@ -414,7 +414,7 @@
 					, "p1_other_name" : "Daryl"
 					, "p1_preferred_name" : "Jimmy"
 					, "p1_suffix" : "Suff"
-					, "p1_gender" : "Male"
+					, "p1_gender" : "M"
 					, "p2_occupation" : "Dentist"
 					, "p2_title" : "Miss"
 					, "p2_initials" : "K"
@@ -423,7 +423,7 @@
 					, "p2_other_name" : "Alice"
 					, "p2_preferred_name" : "Kazz"
 					, "p2_suffix" : "BMMST"
-					, "p2_gender" : "Female"
+					, "p2_gender" : "F"
 				}
 				, {
 					"id" : "129226"
@@ -436,7 +436,7 @@
 					, "p1_other_name" : ""
 					, "p1_preferred_name" : "Aaron"
 					, "p1_suffix" : ""
-					, "p1_gender" : "Male"
+					, "p1_gender" : "M"
 					, "p2_occupation" : ""
 					, "p2_title" : ""
 					, "p2_initials" : ""

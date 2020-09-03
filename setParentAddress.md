@@ -156,12 +156,21 @@
 	}
 	```
 
+	`id` is not a valid parent
+	```javascript
+	__invalid: {
+		"id": "'[id]' is a not a valid Parent"
+	}
+	```
+
 	`[field_name]` is not valid
 	```javascript
 	__invalid: {
 		"[field_name]": "'[field_name]' is not a valid field name"
 	}
 	```
+
+	Below fields are to be referenced within each `addresses` array element
 
 	`id` not supplied within address array
 	```javascript
@@ -170,10 +179,38 @@
 	}
 	```
 
+	`id` does not match 'postal', 'home', 'work'
+	```javascript
+	__invalid: {
+		"id": "'[id]' is not a valid address type"
+	}
+	```
+
+	`id` 'postal' is not supplied in add mode of parent addresses
+	```javascript
+	__invalid: {
+		"id": "'addresses' does not contain a valid 'postal' address"
+	}
+	```
+
+	`id` 'work' is not set up as an address in TASS
+	```javascript
+	__invalid: {
+		"id": "'[id]' is not a valid address type in TASS"
+	}
+	```
+
 	`parent_name` not supplied
 	```javascript
 	__invalid: {
 		"parent_name": "'parent_name' is required for all rows"
+	}
+	```
+
+	`parent_name` is empty for 'postal' address
+	```javascript
+	__invalid: {
+		"parent_name": "'parent_name' is required for 'postal' address"
 	}
 	```
 

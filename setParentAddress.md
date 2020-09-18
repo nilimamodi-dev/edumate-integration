@@ -207,6 +207,13 @@
 	}
 	```
 
+	`parent_name` is more than 61 characters
+	```javascript
+	__invalid: {
+		"parent_name": "'[parent_name]' exceeds 61 characters"
+	}
+	```
+
 	`parent_name` is empty for 'postal' address
 	```javascript
 	__invalid: {

@@ -38,8 +38,6 @@
 	
 	`multiparent_flg [string]` - Multi Parent Flag. Length must be 1 Character (Y/N)
 	
-	`distance_ed [string]` - Distance Education flag. Length must be 1 Character (Y/N)
-
 	**Optional:**
 
 	`other_name [string]` - Other Name.
@@ -73,6 +71,8 @@
 	`date_of_arrival [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Arrival
 
 	`ffpos [string]` - FFPOS (Y or N). If supplied, length must be 1.
+
+	`distance_ed [string]` - Distance Education flag. If supplied, length must be 1 Character (Y/N)
 
 	**Conditional:**
 

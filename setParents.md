@@ -58,6 +58,9 @@
 
 	`p2_suffix [string]` - Parent 2 Suffix.  If empty string is provided, the person will be removed from the parent in TASS.
 	
+	`ud1_flg to ud10_flg [string]` - Parent user defined flag
+
+    `ud21_text to ud25_text [string]` - Parent user defined text
 	
 
 
@@ -393,6 +396,20 @@
 	```javascript
 	__invalid: {
 		"p2_gender": "exceeds 50 characters"
+	}
+	```
+
+	`ud1_flg to ud10_flg` is more than 1 character
+	```javascript
+	__invalid: {
+		"[field]": "exceeds 1 character"
+	}
+	```
+
+	`ud21_text to ud25_text` is more than 20 characters
+	```javascript
+	__invalid: {
+		"[field]": "exceeds 20 characters"
 	}
 	```
 

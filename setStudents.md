@@ -74,6 +74,10 @@
 
 	`distance_ed [string]` - Distance Education flag. If supplied, length must be 1 Character (Y/N)
 
+	`ud1_flg to ud10_flg [string]` - Student user defined flag
+
+    `ud21_text to ud25_text [string]` - Student user defined text
+
 	**Conditional:**
 
 	`mob_phone [string]` - Mobile Phone. Required if sms_flg is present.
@@ -387,6 +391,20 @@
 	```javascript
 	__invalid: {
 		"fte": "Value has more than 2 decimal points."
+	}
+	```
+
+	`ud1_flg to ud10_flg` is more than 1 character
+	```javascript
+	__invalid: {
+		"[field]": "exceeds 1 character"
+	}
+	```
+
+	`ud21_text to ud25_text` is more than 20 characters
+	```javascript
+	__invalid: {
+		"[field]": "exceeds 20 characters"
 	}
 	```
 

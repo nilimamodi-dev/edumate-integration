@@ -60,15 +60,19 @@
 		
 		`e_mail1 [string]` - Email 1.
 		
-		`mobile1 [string]` - Mobile phone 1.
-		
-		`sms_flg1 [string]` - SMS flag for Mobile phone 1 (to allow SMS communication).
-		
 		`e_mail2 [string]` - Email 2.
 		
-		`mobile2 [string]` - Mobile phone 2.
+	**Conditional:**
+
+	`addresses [array]` contains the following conditional fields.
+
+		`mobile1 [string]` - Mobile phone 1. Required if sms_flg is present.
 		
-		`sms_flg2 [string]` - SMS flag for Mobile phone 2 (to allow SMS communication).
+		`sms_flg1 [string]` - SMS flag (Y or N)  for Mobile phone 1. Required if mob_phone is present (to allow SMS communication).
+
+		`mobile2 [string]` - Mobile phone 2. Required if sms_flg is present.
+		
+		`sms_flg2 [string]` - SMS flag (Y or N)  for Mobile phone 2. Required if mob_phone is present (to allow SMS communication).
 	
 
 

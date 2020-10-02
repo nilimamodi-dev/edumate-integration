@@ -316,11 +316,25 @@
 	}
 	```
 
+	`mobile1` or `sms_flg1` is not supplied
+	```javascript
+	__invalid: {
+		"mobile1": "mobile1 and sms_flg1 must be submitted together"
+	} 
+	```
+
 	`sms_flg1` is more than 1 characters
 	```javascript
 	__invalid: {
 		"sms_flg1": "'[sms_flg1]' exceeds 1 characters"
 	}
+	```
+
+	`sms_flg1` must be Y or N
+	```javascript
+	__invalid: {
+		"sms_flg1": "sms_flg1 must be either Y or N"
+	} 
 	```
 
 	`e_mail2` is more than 140 characters
@@ -337,11 +351,25 @@
 	}
 	```
 
+	`mobile2` or `sms_flg2` is not supplied
+	```javascript
+	__invalid: {
+		"mobile2": "mobile2 and sms_flg2 must be submitted together"
+	} 
+	```
+
 	`sms_flg2` is more than 1 characters
 	```javascript
 	__invalid: {
 		"sms_flg2": "'[sms_flg2]' exceeds 1 characters"
 	}
+	```
+
+	`sms_flg2` must be Y or N
+	```javascript
+	__invalid: {
+		"sms_flg2": "sms_flg2 must be either Y or N"
+	} 
 	```
 
 
@@ -394,7 +422,7 @@
 	                    , "mobile1" : "0411458985"
 	                    , "sms_flg1" : "Y"
 	                    , "mobile2" : ""
-	                    , "sms_flg2" : ""
+	                    , "sms_flg2" : "N"
 	                }
 	            ]
 	        }

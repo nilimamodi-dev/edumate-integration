@@ -70,6 +70,10 @@
 
 	`date_of_arrival [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Arrival
 
+	`date_of_birth [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Birth
+
+	`date_of_leaving [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Leaving
+
 	`ffpos [string]` - FFPOS (Y or N). If supplied, length must be 1.
 
 	`distance_ed [string]` - Distance Education flag. If supplied, length must be 1 Character (Y/N)
@@ -80,9 +84,9 @@
 
 	**Conditional:**
 
-	`mob_phone [string]` - Mobile Phone. Required if sms_flg is present.
+	`mobile_phone [string]` - Mobile Phone. Required if sms_flg is present.
 
-	`sms_flg [string]` - SMS Flag (Y or N) Required if mob_phone is present. If supplied, length must be 1.
+	`sms_flg [string]` - SMS Flag (Y or N) Required if mobile_phone is present. If supplied, length must be 1.
 
 
 

@@ -4,7 +4,7 @@
   
 * **Version History:**
 
-    TASS v53.2.nnn - Method Added.
+    TASS v53.2.078 - Method Added.
 
 * **Version:**
 
@@ -38,6 +38,10 @@
 	
 	`multiparent_flg [string]` - Multi Parent Flag. Length must be 1 Character (Y/N)
 	
+	`fte [decimal (1,2)]` - FTE (Range 0.00 to 1.00 only)
+
+	`distance_ed [string]` - Distance Education flag. If supplied, length must be 1 Character (Y/N)
+
 	**Optional:**
 
 	`other_name [string]` - Other Name.
@@ -49,8 +53,6 @@
 	`alternate_id [string]` - Alt ID (Must be a unique value against any student in the database and the submitted list)
 
 	`form_class [alphanumeric]` - Form Class (No spaces or special chars)
-
-	`fte [decimal (1,2)]` - FTE (Range 0.00 to 1.00 only)
 
 	`house [string]` - House (Must be an existing House)
 
@@ -75,8 +77,6 @@
 	`date_of_leaving [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Leaving
 
 	`ffpos [string]` - FFPOS (Y or N). If supplied, length must be 1.
-
-	`distance_ed [string]` - Distance Education flag. If supplied, length must be 1 Character (Y/N)
 
 	`ud1_flg to ud10_flg [string]` - Student user defined flag
 

@@ -69,6 +69,7 @@
 	```javascript
 	{
 	    "success":"You successfully uploaded 1 sundry receipt(s).",
+	    "__tassversion": "01.053.3.000",
 	    "token":{
 	        "sundryreceipts":[
 	            {

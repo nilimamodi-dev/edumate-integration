@@ -55,12 +55,14 @@
 	```javascript
 	{
 		"success": "You successfully uploaded 2 line items.",
+		"__tassversion": "01.053.3.000",
 		"token": {
 			"year": 2019,
 			"period": 8,
-			"timestamp": "{ts '2019-08-21 14:01:26'}",
+			"timestamp": "{ts '2021-01-22 14:04:21'}",
 			"comment_2": "Comment 2",
 			"comment_1": "Comment 1",
+			"control_amt": 100,
 			"line_items": [
 				{
 					"debit_amt": 100,
@@ -291,6 +293,7 @@
 			"period":"8",
 			"comment_1":"Comment 1",
 			"comment_2":"Comment 2",
+			"control_amt": 100,
 			"line_items":[
 				{
 					"seq_num":"1",

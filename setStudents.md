@@ -72,8 +72,6 @@
 
 	`date_of_arrival [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Arrival
 
-	`date_of_birth [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Birth
-
 	`date_of_leaving [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Leaving
 
 	`ffpos [string]` - FFPOS (Y or N). If supplied, length must be 1.
@@ -87,6 +85,8 @@
 	`mobile_phone [string]` - Mobile Phone. Required if sms_flg is present.
 
 	`sms_flg [string]` - SMS Flag (Y or N) Required if mobile_phone is present. If supplied, length must be 1.
+	
+	`date_of_birth [date dd/mm/yyyy or yyyy-mm-dd]` - Date of Birth is required for Victorian School and optional for other Schools.
 
 
 
